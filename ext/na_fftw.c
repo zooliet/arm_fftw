@@ -242,12 +242,13 @@ static VALUE na_fftw3(int argc, VALUE *argv, VALUE self) {
 	v1 = na_to_narray(val);
 	GetNArray(v1,a1);
 
-	if(a1->type <= NA_SFLOAT || a1->type == NA_SCOMPLEX ){
-		return( na_fftw3_float(argc, argv, self) );
-	} 
-	else {
-		return( na_fftw3_double(argc, argv, self) );
-	}
+	return( na_fftw3_float(argc, argv, self) );
+//	if(a1->type <= NA_SFLOAT || a1->type == NA_SCOMPLEX ){
+//		return( na_fftw3_float(argc, argv, self) );
+//	} 
+//	else {
+//		return( na_fftw3_double(argc, argv, self) );
+//	}
 }
 
 #else

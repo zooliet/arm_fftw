@@ -13,7 +13,7 @@ if(!(have_header("narray.h") && have_header("narray_config.h")))
 end
 
 # have_library("fftw3")
-if(!( have_header("fftw3.h") && have_library("fftw3"))) 
+if(!( have_header("fftw3.h") )) 
   puts "Check your FFTW3 library and path"
   exit(-1)  
 end
