@@ -21,3 +21,4 @@ ext/*.log
 ext/*.bundle
 ext/Makefile
 c_test/*.o
+c_test/fftw_raw
